@@ -14,6 +14,12 @@ body{
     font-size: 14px;
 }
 
+@media print {
+    button{
+        display: none;
+    }
+}
+
 .container{
     background-color: #fff;
     border-radius: 8px;
@@ -69,6 +75,7 @@ body{
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
 
 .radiobox .especie{
     display: flex;
@@ -152,7 +159,8 @@ body{
 
 .campo2{
     border-radius: 8px;
-    border: 2px solid #8c8c8c;   
+    border: 2px solid #8c8c8c;
+    margin-top: 20px;   
 }
 
 button{
@@ -161,7 +169,7 @@ button{
     color: #fff;
     font-size: 1rem;
     border: none;
-    margin-top: 5px;
+    margin-top: 30px;
     cursor: pointer;
     border-radius: 6px;
     font-weight: 400;
