@@ -17,146 +17,164 @@
             </a>
             <h1>ICB - Instituto de Ciências Biológicas</span>
         </div>
-        <div class="impressao" id="impressao">
-            <fieldset class="campo1">
-                <div class="requisicao" id="requisicao">
-                    <h2 class="title">Requisição de Animais-CEBIO</h2>
-                    <div class="radiobox">
-                        <div class="especie">
-                            <span>Espécie:</span>
-                            <div class="rato">
-                                <label for="rato">Rato</label>
-                                <input type="radio" name="especie" id="rato" required>
+        <form action="" method="get"></form>
+            <div class="impressao" id="impressao">
+                <fieldset class="campo1">
+                    <div class="requisicao" id="requisicao">
+                        <h2 class="title">Requisição de Animais-CEBIO</h2>
+                        <div class="radiobox">
+                            <div class="especie">
+                                <div class="spann">
+                                    <span>Espécie:</span>
+                                </div>
+                                <div class="cato">
+                                    <div class="rato">
+                                        <label for="rato">Rato</label>
+                                        <input type="radio" name="especie" id="rato" required>
+                                    </div>
+                                    <div class="camundongo">
+                                        <label for="camundongo">Camundongo</label>
+                                        <input type="radio" name="especie" id="camundongo" required>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="camundongo">
-                                <label for="camundongo">Camundongo</label>
-                                <input type="radio" name="especie" id="camundongo" required>
-                            </div>
-                        </div>
-                        <div class="sexo">
-                            <span>Sexo:</span>
-                            <div class="femea">
-                                <label for="femea">Fêmea</label>
-                                <input type="radio" name="sexo" id="femea" required>
-                            </div>
-                            <div class="macho">
-                                <label for="macho">Macho</label>
-                                <input type="radio" name="sexo" id="macho" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="textbox">
-                        <div class="linhagem">
-                            <label for="linhagem">Linhagem</label>
-                            <input type="text" name="linhagem" id="linhagem" placeholder="Linhagem" required>
-                        </div>
-                        <div class="fields">
-                            <div class="numero">
-                                <label for="quantidade">Quantidade</label>
-                                <input type="text" name="quantidade" id="quantidade" placeholder="Quantidade" required>
-                            </div>
-                            <div class="numero">
-                                <label for="idade">Idade</label>
-                                <input type="text" name="idade" id="idade" placeholder="Idade" required>
-                            </div>
-                            <div class="numero">
-                                <label for="peso">Peso</label>
-                                <input type="text" name="peso" id="peso" placeholder="Peso" required>
+                            <div class="sexo">
+                                <div class="spann">
+                                    <span>Sexo:</span>
+                                </div>
+                                <div class="fecho">
+                                    <div class="femea">
+                                        <label for="femea">Fêmea</label>
+                                        <input type="radio" name="sexo" id="femea" required>
+                                    </div>
+                                    <div class="macho">
+                                        <label for="macho">Macho</label>
+                                        <input type="radio" name="sexo" id="macho" required>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pessoa">
-                            <label for="requerente">Requerente</label>
-                            <input type="text" name="requerente" id="requerente"  placeholder="Requerente" required>
-                            <label for="orientador">Orientador</label>
-                            <input type="text" name="orientador" id="orientador" placeholder="Orientador" required>
-                        </div>
-                        <div class="fields2">
-                            <div class="ramade">
-                                <label for="ramal">Ramal</label>
-                                <input type="text" name="ramal" id="ramal" placeholder="Ramal" required>
+                        <div class="textbox">
+                            <div class="linhagem">
+                                <label for="linhagem">Linhagem</label>
+                                <input type="text" name="linhagem" id="linhagem" placeholder="Linhagem" required>
                             </div>
-                            <div class="ramade2">
-                                <label for="unidade">Unidade</label>
-                                <input type="text" name="unidade" id="unidade" placeholder="Unidade" required>
+                            <div class="fields">
+                                <div class="numero">
+                                    <label for="quantidade">Quantidade</label>
+                                    <input type="text" name="quantidade" id="quantidade" placeholder="Quantidade" required>
+                                </div>
+                                <div class="numero">
+                                    <label for="idade">Idade</label>
+                                    <input type="text" name="idade" id="idade" placeholder="Idade" required>
+                                </div>
+                                <div class="numero">
+                                    <label for="peso">Peso</label>
+                                    <input type="text" name="peso" id="peso" placeholder="Peso" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="departamento">
-                            <label for="departamento">Departamento</label>
-                            <input type="text" name="departamento" id="departamento" placeholder="Departamento" required>
-                        </div>
-                        <div class="rodape">
-                            <div class="assiantura">
-                                <span>Assinatura do Orientador: </span>
+                            <div class="pessoa">
+                                <label for="requerente">Requerente</label>
+                                <input type="text" name="requerente" id="requerente"  placeholder="Requerente" required>
+                                <label for="orientador">Orientador</label>
+                                <input type="text" name="orientador" id="orientador" placeholder="Orientador" required>
                             </div>
-                            <div class="data">
-                                <label for="data">Data</label>
-                                <input type="date" name="data" id="data" required>
+                            <div class="fields2">
+                                <div class="ramade">
+                                    <label for="ramal">Ramal</label>
+                                    <input type="text" name="ramal" id="ramal" placeholder="Ramal" required>
+                                </div>
+                                <div class="ramade2">
+                                    <label for="unidade">Unidade</label>
+                                    <input type="text" name="unidade" id="unidade" placeholder="Unidade" required>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <hr>
-            <fieldset class="campo2">
-                <div class="protocolo" id="protocolo">
-                    <h2 class="title">Protocolo de Requisição de Animais-CEBIO</h2>
-                    <div class="radiobox">
-                        <div class="especie">
-                            <span>Espécie:</span>
-                            <div class="rato">
-                                <label for="rato">Rato</label>
-                                <input type="radio" name="especie" id="rato" required>
+                            <div class="departamento">
+                                <label for="departamento">Departamento</label>
+                                <input type="text" name="departamento" id="departamento" placeholder="Departamento" required>
                             </div>
-                            <div class="camundongo">
-                                <label for="camundongo">Camundongo</label>
-                                <input type="radio" name="especie" id="camundongo" required>
-                            </div>
-                        </div>
-                        <div class="sexo">
-                            <span>Sexo:</span>
-                            <div class="femea">
-                                <label for="femea">Fêmea</label>
-                                <input type="radio" name="sexo" id="femea" required>
-                            </div>
-                            <div class="macho">
-                                <label for="macho">Macho</label>
-                                <input type="radio" name="sexo" id="macho" required>
+                            <div class="rodape">
+                                <div class="assiantura">
+                                    <span>Assinatura do Orientador: </span>
+                                </div>
+                                <div class="data">
+                                    <label for="data">Data</label>
+                                    <input type="date" name="data" id="data" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="textbox">
-                        <div class="linhagem">
-                            <label for="linhagem">Linhagem</label>
-                            <input type="text" name="linhagem" id="linhagem" placeholder="Linhagem" required>
+                </fieldset>
+                <hr>
+                <fieldset class="campo2">
+                    <div class="protocolo" id="protocolo">
+                        <h2 class="title">Protocolo de Requisição de Animais-CEBIO</h2>
+                        <div class="radiobox">
+                            <div class="especie">
+                                <div class="spann">
+                                    <span>Espécie:</span>
+                                </div>
+                                <div class="cato">
+                                    <div class="rato">
+                                        <label for="rato">Rato</label>
+                                        <input type="radio" name="especie02" id="rato" required>
+                                    </div>
+                                    <div class="camundongo">
+                                        <label for="camundongo">Camundongo</label>
+                                        <input type="radio" name="especie02" id="camundongo" required>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="sexo">
+                                <div class="spann">
+                                    <span>Sexo:</span>
+                                </div>
+                                <div class="fecho">
+                                    <div class="femea">
+                                        <label for="femea">Fêmea</label>
+                                        <input type="radio" name="sexo02" id="femea" required>
+                                    </div>
+                                    <div class="macho">
+                                        <label for="macho">Macho</label>
+                                        <input type="radio" name="sexo02" id="macho" required>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="fields">
-                            <div class="numero">
-                                <label for="quantidade">Quantidade</label>
-                                <input type="text" name="quantidade" id="quantidade" placeholder="Quantidade" required>
+                        <div class="textbox">
+                            <div class="linhagem">
+                                <label for="linhagem">Linhagem</label>
+                                <input type="text" name="linhagem" id="linhagem" placeholder="Linhagem" required>
                             </div>
-                            <div class="numero">
-                                <label for="idade">Idade</label>
-                                <input type="text" name="idade" id="idade" placeholder="Idade" required>
+                            <div class="fields">
+                                <div class="numero">
+                                    <label for="quantidade">Quantidade</label>
+                                    <input type="text" name="quantidade" id="quantidade" placeholder="Quantidade" required>
+                                </div>
+                                <div class="numero">
+                                    <label for="idade">Idade</label>
+                                    <input type="text" name="idade" id="idade" placeholder="Idade" required>
+                                </div>
+                                <div class="numero">
+                                    <label for="peso">Peso</label>
+                                    <input type="text" name="peso" id="peso" placeholder="Peso" required>
+                                </div>
                             </div>
-                            <div class="numero">
-                                <label for="peso">Peso</label>
-                                <input type="text" name="peso" id="peso" placeholder="Peso" required>
-                            </div>
-                        </div>
-                        <div class="rodape">
-                            <div class="assiantura">
-                                <span>Assinatura CEBIO:</span>
-                            </div>
-                            <div class="data">
-                                <label for="data">Data</label>
-                                <input type="date" name="data" id="data" required>
+                            <div class="rodape">
+                                <div class="assiantura">
+                                    <span>Assinatura CEBIO:</span>
+                                </div>
+                                <div class="data">
+                                    <label for="data">Data</label>
+                                    <input type="date" name="data" id="data" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </fieldset>
-        </div>
-        <button id="pdf">Enviar Formulário</button>
+                </fieldset>
+            </div>
+            <button id="pdf">Enviar Formulário</button>
+        </form>
     </div>
 </body>
 </html>
