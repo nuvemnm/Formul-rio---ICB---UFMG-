@@ -62,7 +62,6 @@ body{
 }
 
 
-
 .container .requisicao{
     padding: 15px;
 }
@@ -76,18 +75,38 @@ body{
     padding-bottom: 10px;
 }
 
-
 .radiobox .especie{
     display: flex;
-    justify-content: space-between;
-    padding-inline: 200px;
+}
+
+.radiobox .cato{
+    display: flex;
+   padding-left: 90px;
+    
+}
+
+.radiobox .camundongo{
+    padding-left: 100px;
+}
+
+.radiobox .spann{
+    justify-content: left;
 }
 
 .radiobox .sexo{
     display: flex;
-    justify-content: space-between;
-    padding-inline: 200px;
 }
+
+.radiobox .fecho{
+    display: flex;
+    padding-left: 111px;
+    
+}
+
+.radiobox .macho{
+    padding-left: 85px;
+}
+
 .linhagem{
     display: flex;
     flex-direction: column;
