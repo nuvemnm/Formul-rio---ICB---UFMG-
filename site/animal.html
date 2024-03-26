@@ -15,7 +15,7 @@
             <a href="https://ufmg.br/">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Logo_UFMG.png" heght="120" width="160" alt="ufmg">
             </a>
-            <h1>ICB - Instituto de Ciências Biológicas</span>
+            <h1>ICB - Instituto de Ciências Biológicas</h1>
         </div>
         <form action="" method="get"></form>
             <div class="impressao" id="impressao">
@@ -25,7 +25,7 @@
                         <div class="radiobox">
                             <div class="especie">
                                 <div class="spann">
-                                    <span>Espécie:</span>
+                                    <strong>Espécie:</strong>
                                 </div>
                                 <div class="cato">
                                     <div class="rato">
@@ -40,7 +40,7 @@
                             </div>
                             <div class="sexo">
                                 <div class="spann">
-                                    <span>Sexo:</span>
+                                    <strong>Sexo:</strong>
                                 </div>
                                 <div class="fecho">
                                     <div class="femea">
@@ -91,7 +91,19 @@
                             </div>
                             <div class="departamento">
                                 <label for="departamento">Departamento</label>
-                                <input type="text" name="departamento" id="departamento" placeholder="Departamento" required>
+                                <select name="departamento" id="departamento" required>
+                                    <option value=""></option>
+                                    <option value="dbiq">Bioquímica e Imunologia</option>
+                                    <option value="bot">Botânica</option>
+                                    <option value="far">Farmacologia</option>
+                                    <option value="fb">Fisiologia e Biofísica</option>
+                                    <option value="gee">Genética, Ecologia e Evolução</option>
+                                    <option value="mic">Microbiologia</option>
+                                    <option value="morf">Morfologia</option>
+                                    <option value="para">Parasitologia</option>
+                                    <option value="pg">Patologia Geral</option>
+                                    <option value="zoo">Zoologia</option>
+                                </select>
                             </div>
                             <div class="rodape">
                                 <div class="assiantura">
@@ -112,7 +124,7 @@
                         <div class="radiobox">
                             <div class="especie">
                                 <div class="spann">
-                                    <span>Espécie:</span>
+                                    <strong>Espécie:</strong>
                                 </div>
                                 <div class="cato">
                                     <div class="rato">
@@ -127,7 +139,7 @@
                             </div>
                             <div class="sexo">
                                 <div class="spann">
-                                    <span>Sexo:</span>
+                                    <strong>Sexo:</strong>
                                 </div>
                                 <div class="fecho">
                                     <div class="femea">
@@ -173,7 +185,9 @@
                     </div>
                 </fieldset>
             </div>
-            <button id="pdf">Enviar Formulário</button>
+            <button class="button type1" id="pdf">
+                <span class="btn-txt">Salvar Formulário</span>
+            </button>
         </form>
     </div>
 </body>
