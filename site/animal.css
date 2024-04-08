@@ -14,11 +14,6 @@ body{
     font-size: 14px;
 }
 
-@media print {
-    button{
-        display: none;
-    }
-}
 
 .container{
     background-color: #fff;
@@ -28,7 +23,7 @@ body{
     overflow: hidden;
     width: 790px;
     max-width: 100%;
-    min-height: 1120px;
+    min-height: 700px;
     max-height: 100%;
     padding: 10px;
 }
@@ -84,6 +79,7 @@ body{
     padding: 15px;
 }
 
+
 .radiobox{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -133,10 +129,28 @@ body{
     padding-left: 85px;
 }
 
-.linhagem{
+.radiobox .linhagem{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    background-color: #f0efef;
+    padding: 7px;
+    border-radius: 2px;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.radiobox .tipagem{
+    display: flex;
+    padding-left: 73px;
+}
+
+.radiobox .balbc{
+    padding-left: 92px;
+}
+
+.radiobox .c57bl6j{
+    padding-left: 92px;
+    
 }
 
 .fields{
@@ -173,6 +187,12 @@ body{
     flex-direction: column;
 }
 
+.departamento{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
 
 .rodape {
     display: flex;
@@ -200,7 +220,8 @@ body{
 .campo2{
     border-radius: 3px;
     border: 2px solid #8c8c8c;
-    margin-top: 20px;   
+    margin-top: 20px;  
+    /*display: none;*/
 }
 
 /*
@@ -218,6 +239,9 @@ button{
     cursor: pointer;
 }
 */
+.linha{
+    display: none;
+}
 
 .button {
     height: 40px;
@@ -230,7 +254,7 @@ button{
     overflow: hidden;
     border-radius: 4px;
     color: #000000;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .btn-txt {
@@ -240,26 +264,22 @@ button{
     
   }
   
-  .type1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all 0.5s ease-in-out;
-    background-color: rgb(33, 138, 115);
-    border-radius: 30px;
-    visibility: hidden;
-    height: 10px;
-    width: 11px;
-    z-index: -1;
-  }
-  
+
   .button:hover {
     color: #fff;
     border: none;
+    background-color: rgb(33, 138, 115);
   }
   
-  .type1:hover::after {
-    visibility: visible;
-    transform: scale(10) translateX(2px);
-  }
+  @media print {
+    .container{
+        min-height: 1122px;
+    }
+    button{
+        display: none;
+    }
+    .campo2, .linha{
+        display: block;
+    }
+    
+}
