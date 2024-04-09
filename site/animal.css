@@ -221,24 +221,9 @@ body{
     border-radius: 3px;
     border: 2px solid #8c8c8c;
     margin-top: 20px;  
-    /*display: none;*/
+    display: none;
 }
 
-/*
-button{
-    height: 40px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    margin-top: 30px;
-    cursor: pointer;
-    border-radius: 2px;
-    font-weight: 400;
-    background-color: rgb(33, 138, 115);
-    cursor: pointer;
-}
-*/
 .linha{
     display: none;
 }
@@ -246,7 +231,7 @@ button{
 .button {
     height: 40px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     position: relative;
     background-color: transparent;
     cursor: pointer;
