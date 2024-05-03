@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     font-size: 14px;
+    padding-top: 10px;
 }
 
 
@@ -53,7 +54,7 @@ body{
     border: 1px solid #8c8c8c; 
     padding-left: 10px;
 }
-
+/*
 .container .textbox select{
     margin-bottom: 10px;
     height: 28px;
@@ -63,7 +64,7 @@ body{
     background-color: rgb(255, 255, 255);
     width: 100%;
 }
-
+*/
 .container .radiobox input{
     width: 13px; 
     height: 13px;
@@ -99,7 +100,7 @@ body{
 
 .radiobox .cato{
     display: flex;
-   padding-left: 90px;
+    padding-left: 90px;
 }
 
 .radiobox .camundongo{
@@ -228,6 +229,8 @@ body{
     display: none;
 }
 
+
+
 .button {
     height: 40px;
     width: 100%;
@@ -266,5 +269,14 @@ body{
     .campo2, .linha{
         display: block;
     }
+    body{
+        padding-top: 0px;
+    }
     
+}
+
+@media screen and (max-width: 768px){
+	.container {
+		display: block;    
+	}
 }

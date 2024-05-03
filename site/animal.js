@@ -1,5 +1,4 @@
 
-
 const cpm1quantidade = document.querySelector('#quantidade');
 const cpm1idade = document.querySelector('#idade');
 const cpm1peso = document.querySelector('#peso');
