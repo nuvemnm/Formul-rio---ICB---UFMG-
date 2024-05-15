@@ -1,4 +1,3 @@
-
 const cpm1quantidade = document.querySelector('#quantidade');
 const cpm1idade = document.querySelector('#idade');
 const cpm1peso = document.querySelector('#peso');
@@ -61,8 +60,21 @@ container.addEventListener('change', atualizaespecie);
 container.addEventListener('change', atualizasexo);
 container.addEventListener('change', atualizalinhagem);
 
+function numero(){
+	//cria variaveis
+	const quantidade = document.getElementById("quantidade");
+	const idade = document.getElementById("idade");
+	const peso = document.getElementById("peso");
+	const ramal = document.getElementById("ramal");
+	//limita so para numeros
+	quantidade.value = quantidade.value.replace(/[^0-9]/g, '');
+	idade.value = idade.value.replace(/[^0-9]/g, '');
+	peso.value = peso.value.replace(/[^0-9]/g, '');
+	ramal.value = ramal.value.replace(/[^0-9]/g, '');
+}
 
 //função print
 function gerapdf(){
     window.print();
 }
+

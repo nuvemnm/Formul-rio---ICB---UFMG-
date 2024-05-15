@@ -38,7 +38,7 @@
             </a>
             <h1>ICB - Instituto de Ciências Biológicas</h1>
         </div>
-        <form method = "get" id="form">
+        <form method = "get" id="form" onsubmit = "gerapdf()">
             <fieldset class="campo1">
                 <div class="requisicao" id="requisicao">
                     <h2 class="title">Requisição de Animais-CEBIO</h2>
@@ -49,11 +49,11 @@
                             </div>
                             <div class="cato">
                                 <div class="rato">
-                                    <input type="radio" name="especie" id="rato" >
+                                    <input type="radio" name="especie" id="rato" required >
                                     <label for="rato">Rato</label>
                                 </div>
                                 <div class="camundongo">
-                                    <input type="radio" name="especie" id="camundongo" >
+                                    <input type="radio" name="especie" id="camundongo" required>
                                     <label for="camundongo">Camundongo</label>
                                 </div>
                             </div>
@@ -64,11 +64,11 @@
                             </div>
                             <div class="fecho">
                                 <div class="femea">                                    
-                                    <input type="radio" name="sexo" id="femea" >
+                                    <input type="radio" name="sexo" id="femea" required>
                                     <label for="femea">Fêmea</label>
                                 </div>
                                 <div class="macho">
-                                    <input type="radio" name="sexo" id="macho" >
+                                    <input type="radio" name="sexo" id="macho" required>
                                     <label for="macho">Macho</label>
                                 </div>
                             </div>
@@ -79,15 +79,15 @@
                             </div>
                             <div class="tipagem">
                                 <div class="swiss">
-                                    <input type="radio" name="tipagem" id="swiss" >
+                                    <input type="radio" name="tipagem" id="swiss" required>
                                     <label for="swiss">SWISS</label>
                                 </div>
                                 <div class="balbc">
-                                    <input type="radio" name="tipagem" id="balbc" >
+                                    <input type="radio" name="tipagem" id="balbc" required>
                                     <label for="balbc">BALB/C</label>
                                 </div>
                                 <div class="c57bl6j">
-                                    <input type="radio" name="tipagem" id="c57bl6j" >
+                                    <input type="radio" name="tipagem" id="c57bl6j" required>
                                     <label for="c57bl6j">C57BL6J</label>
                                 </div>
                             </div>
@@ -97,29 +97,29 @@
                         <div class="fields">
                             <div class="numero">
                                 <label for="quantidade">Quantidade</label>
-                                <input type="text" name="quantidade" id="quantidade" pattern="[0-9]*" placeholder="Quantidade(unid)" >
+                                <input type="text" name="quantidade" id="quantidade" pattern="[0-9]*" placeholder="Quantidade(unid)" oninput="numero()" required>
                             </div>
                             <div class="numero">
                                 <label for="idade">Idade</label>
-                                <input type="text" name="idade" id="idade" pattern="[0-9]*" placeholder="Idade(semanas)" >
+                                <input type="text" name="idade" id="idade" pattern="[0-9]*" placeholder="Idade(semanas)" oninput="numero()" required>
                             </div>
                             <div class="numero">
                                 <label for="peso">Peso</label>
-                                <input type="text" name="peso" id="peso" pattern="[0-9]*" placeholder="Peso(g)" >
+                                <input type="text" name="peso" id="peso" pattern="[0-9]*" placeholder="Peso(g)" oninput="numero()" required>
                             </div>
                         </div>
                         <div class="pessoa">
                             <label for="requerente">Requerente</label>
                             <input type="text" name="requerente" id="requerente" placeholder="Requerente" value="<?php 
-		                            print $_SERVER ['Shib-Person-CommonName']; 
+		                            print $nome; 
                             ?>">
                             <label for="orientador">Orientador</label>
-                            <input type="text" name="orientador" id="orientador" placeholder="Orientador" >
+                            <input type="text" name="orientador" id="orientador" placeholder="Orientador" required>
                         </div>
                         <div class="fields2">
                             <div class="ramade">
                                 <label for="ramal">Ramal</label>
-                                <input type="text" name="ramal" id="ramal" placeholder="Ramal" >
+                                <input type="text" name="ramal" id="ramal" placeholder="Ramal" oninput="numero()" required>
                             </div>
                             <div class="ramade2">
                                 <label for="unidade">Unidade</label>
@@ -133,7 +133,7 @@
                             <label for="departamento">Departamento</label>
                             <input type="text" name="departamento" id="departamento" placeholder="Departamento" value="<?
                          
-                            ?>" >
+                            ?>" required>
                         </div>
                         <div class="rodape">
                             <div class="assiantura">
@@ -141,7 +141,7 @@
                             </div>
                             <div class="data">
                                 <label for="data">Data</label>
-                                <input type="text" name="data" id="data" placeholder="Data">
+                                <input type="text" name="data" id="data" placeholder="Data" required>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                     </div>
                 </div>
             </fieldset>
-            <button onclick="gerapdf()" class="button type1" id="pdf">
+            <button /*onclick="gerapdf()"*/ type = "submit" class="button type1" id="pdf">
                 <span class="btn-txt">Salvar Formulário</span>
             </button>
         </form>

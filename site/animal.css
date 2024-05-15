@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -272,7 +272,6 @@ body{
     body{
         padding-top: 0px;
     }
-    
 }
 
 @media screen and (max-width: 768px){
