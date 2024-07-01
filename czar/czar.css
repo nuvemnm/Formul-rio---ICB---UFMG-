@@ -50,9 +50,6 @@ main{
     background-size: cover;
     height: 134vh;
     opacity: 0.8;
-    background-size: 2876px 1918px;
-    background-position-x: -450px;
-    background-position-y: -300px;    
 }
 
 .nav-list{
@@ -71,4 +68,18 @@ main{
     padding-left: 1700px;
     padding-top: 160px;
 
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+aside{
+    background-color: #e9dfdf;
+    padding-top: 100px;
+    border-radius: 15px;
+    width: 70vh;
+    height: 20vh;
 }
