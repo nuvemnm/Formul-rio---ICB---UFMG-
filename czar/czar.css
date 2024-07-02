@@ -74,12 +74,17 @@ h1{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 aside{
-    background-color: #e9dfdf;
-    padding-top: 100px;
+    position: absolute;
+    background-color: #e9dfdf85;
+    border-color: #FFF;
+    padding-top: 20px;
     border-radius: 15px;
+    margin-top: 10vh;
+    margin-left: 4vh;
     width: 70vh;
-    height: 20vh;
+    height: 60vh;
 }
