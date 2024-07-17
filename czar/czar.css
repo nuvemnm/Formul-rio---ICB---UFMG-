@@ -31,7 +31,7 @@ a:hover{
     size: 10px 10px;
 }
 
-nav{
+.cabecalho{
     display: flex;
     justify-content: space-between;
     padding-inline: 120px;
@@ -87,4 +87,20 @@ aside{
     margin-left: 4vh;
     width: 70vh;
     height: 60vh;
+}
+
+footer{
+    display: flex; /* Adiciona flex display */
+    padding-top: 2vh;
+    justify-content: center;
+    position: absolute;
+    width: 100%; /* Garante que o footer tenha a largura total da tela */
+    height: 25vh;
+    background-color: white;
+    margin-top: 134vh;
+}
+
+form{
+    flex-direction: column;
+    width: 20vh;
 }
