@@ -86,21 +86,62 @@ aside{
     margin-top: 10vh;
     margin-left: 4vh;
     width: 70vh;
-    height: 60vh;
+    height: 70vh;
 }
 
-footer{
-    display: flex; /* Adiciona flex display */
-    padding-top: 2vh;
+.noticia_s{
+    margin-top: 1vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+.noticia_s a{
+    margin-top: 1vh;
+    display: flex;
+    padding-left: 2vh;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    background-color: white;
+    margin: 15px;
+    width: 60vh;
+    height: 18vh;
+    border-radius: 15px;
+}
+
+.noticia_a img{
+    display: flex;
+    padding-left: 45vh;
+    
+}
+
+.contatar{
+    padding-top: 1vh;
     position: absolute;
+    display: flex;
+    justify-content: center;
     width: 100%; /* Garante que o footer tenha a largura total da tela */
-    height: 25vh;
+    height: 5vh;
     background-color: white;
     margin-top: 134vh;
 }
 
+footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+    width: 100%; /* Garante que o footer tenha a largura total da tela */
+    height: 25vh;
+    background-color: white;
+    margin-top: 139vh;
+}
+
 form{
+    display: flex;
     flex-direction: column;
     width: 20vh;
 }
