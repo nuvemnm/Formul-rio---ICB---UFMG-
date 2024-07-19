@@ -105,17 +105,31 @@ aside{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.705);
     margin: 15px;
     width: 60vh;
     height: 18vh;
     border-radius: 15px;
+    transition: all 0.25s ease-in-out;
 }
 
-.noticia_a img{
-    display: flex;
-    padding-left: 45vh;
+.noticia_s a:hover{
+    background-color: white;
+}
+
+.noticia_s p{
+    margin-top: 5vh;
+    font-size: 14px;
     
+}
+
+.noticia_s strong{
+    margin-top: 1vh;
+}
+
+.noticia_s img{
+    padding-left: 34vh;
+    border-radius: 15px;
 }
 
 .contatar{
@@ -124,7 +138,7 @@ aside{
     display: flex;
     justify-content: center;
     width: 100%; /* Garante que o footer tenha a largura total da tela */
-    height: 5vh;
+    height: 2vh;
     background-color: white;
     margin-top: 134vh;
 }
@@ -133,15 +147,38 @@ footer{
     position: absolute;
     display: flex;
     justify-content: center;
-    padding-top: 3vh;
-    width: 100%; /* Garante que o footer tenha a largura total da tela */
-    height: 25vh;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
     background-color: white;
-    margin-top: 139vh;
+    margin-top: 138vh;
+}
+
+footer p{
+    width: 35vh;
+    text-align: justify;
+    padding-right: 20vh;
 }
 
 form{
+    padding-top: 8vh;
     display: flex;
     flex-direction: column;
-    width: 20vh;
+    width: 50vh;
+}
+
+input,
+textarea{
+    border-radius: 3px;
+    height: 3vh;
+    padding: 0.3vh;
+    margin: 0.3vh;
+}
+
+input[placeholder="Mensagem"],
+textarea{
+    border-radius: 3px;
+    height: 10vh;
+    padding: 0.3vh;
+    margin: 0.3vh;
 }
